@@ -1,10 +1,17 @@
-
 # Freelance Job Scraper  
-This script scrapes jobs from RemoteOK, PeoplePerHour, and Wellfound.  
+**Scrapes RemoteOK, PeoplePerHour, and Wellfound daily.**  
+
+## Features  
+- Daily CSV outputs with timestamps.  
+- Error handling and logging.  
+- Headless Chrome for JavaScript sites.  
+
+## Challenges Overcome  
+1. **PeoplePerHour**: No location data without login.  
+2. **Wellfound**: Dynamic React components required Selenium.  
+3. **RemoteOK**: API metadata had to be filtered.  
 
 ## Setup  
-1. **Open in Colab**:  
-   - Click [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](your_colab_notebook_link_here)  
-2. **Install dependencies**:  
-   ```bash
-   !pip install requests beautifulsoup4 pandas selenium webdriver-manager
+1. Install packages:  
+```bash
+!pip install requests beautifulsoup4 pandas selenium webdriver-manager
